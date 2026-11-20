@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151716">
+  <meta name="description" content="A few moments from Nathan's first year of university and life in Baguio City.">
+  <title>Gallery — Nathan Josh Ramoran</title>
+  <link rel="preload" href="assets/fonts/InterVariable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Nathan Ramoran</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="interest.html">Interests</a>
+        <a class="nav-link" href="gallery.html" aria-current="page">Gallery</a>
+        <a class="nav-contact" href="mailto:njpr2253344@slu.edu.ph">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-heading wrap" aria-labelledby="page-title">
+      <h1 id="page-title">My first year</h1>
+      <p>Some places, pastimes, and small moments from my first year.</p>
+    </section>
+
+    <section class="gallery-grid wrap" aria-label="Photo gallery">
+      <a class="gallery-card gallery-card--feature" href="assets/images/code.jpg" data-gallery-item data-caption="Learning by building" data-alt="A Java program open on a laptop.">
+        <span class="gallery-photo"><img src="assets/images/code.jpg" alt="A Java program open on a laptop" width="1800" height="1200" fetchpriority="high"></span>
+        <span>Learning by building</span>
+      </a>
+      <a class="gallery-card" href="assets/images/nature.jpg" data-gallery-item data-caption="A little green space" data-alt="A leafy trail surrounded by trees.">
+        <span class="gallery-photo"><img src="assets/images/nature.jpg" alt="A leafy trail surrounded by trees" width="1800" height="810" loading="lazy" decoding="async"></span>
+        <span>A little green space</span>
+      </a>
+      <a class="gallery-card" href="assets/images/sluview.jpg" data-gallery-item data-caption="A familiar view" data-alt="Hills and rooftops viewed from above in Baguio.">
+        <span class="gallery-photo"><img src="assets/images/sluview.jpg" alt="Hills and rooftops viewed from above in Baguio" width="1800" height="1350" loading="lazy" decoding="async"></span>
+        <span>A familiar view</span>
+      </a>
+      <a class="gallery-card" href="assets/images/smpic.jpg" data-gallery-item data-caption="After the sun goes down" data-alt="A lake at dusk with boats and lights.">
+        <span class="gallery-photo"><img src="assets/images/smpic.jpg" alt="A lake at dusk with boats and lights" width="1800" height="1350" loading="lazy" decoding="async"></span>
+        <span>After the sun goes down</span>
+      </a>
+      <a class="gallery-card" href="assets/images/coolview.jpg" data-gallery-item data-caption="A cloudy afternoon" data-alt="Rooftops and hills under a cloudy sky.">
+        <span class="gallery-photo"><img src="assets/images/coolview.jpg" alt="Rooftops and hills under a cloudy sky" width="1800" height="1013" loading="lazy" decoding="async"></span>
+        <span>A cloudy afternoon</span>
+      </a>
+      <a class="gallery-card" href="assets/images/elden.jpg" data-gallery-item data-caption="A gaming break" data-alt="An Elden Ring scene shown on a monitor.">
+        <span class="gallery-photo"><img src="assets/images/elden.jpg" alt="An Elden Ring scene shown on a monitor" width="1800" height="1013" loading="lazy" decoding="async"></span>
+        <span>A gaming break</span>
+      </a>
+      <a class="gallery-card" href="assets/images/pasta.jpg" data-gallery-item data-caption="A home-cooked favorite" data-alt="A bowl of pasta with sauce and a spoon.">
+        <span class="gallery-photo"><img src="assets/images/pasta.jpg" alt="A bowl of pasta with sauce and a spoon" width="1800" height="1350" loading="lazy" decoding="async"></span>
+        <span>A home-cooked favorite</span>
+      </a>
+      <a class="gallery-card" href="assets/images/otherchess.jpg" data-gallery-item data-caption="One more chess game" data-alt="A chess game on a laptop with less than one second on the clock.">
+        <span class="gallery-photo"><img src="assets/images/otherchess.jpg" alt="A chess game with less than one second remaining" width="1800" height="1013" loading="lazy" decoding="async"></span>
+        <span>One more chess game</span>
+      </a>
+      <a class="gallery-card" href="assets/images/chess.jpg" data-gallery-item data-caption="Patterns on the board" data-alt="A chess puzzle on an online chess board.">
+        <span class="gallery-photo"><img src="assets/images/chess.jpg" alt="A chess puzzle on an online chess board" width="1800" height="1800" loading="lazy" decoding="async"></span>
+        <span>Patterns on the board</span>
+      </a>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="photo-viewer" aria-label="Photo viewer">
+    <button class="lightbox-close" type="button" data-viewer-close aria-label="Close photo viewer">×</button>
+    <figure>
+      <img class="lightbox-image" src="" alt="">
+      <figcaption id="photo-caption"></figcaption>
+    </figure>
+    <div class="lightbox-controls">
+      <button type="button" data-viewer-previous>Previous</button>
+      <button type="button" data-viewer-next>Next</button>
+    </div>
+  </dialog>
+
+  <footer class="site-footer wrap">
+    <span>Nathan Josh Ramoran</span>
+    <a href="index.html">Home</a>
+  </footer>
+  <script src="gallery.js" defer></script>
+</body>
+</html>
